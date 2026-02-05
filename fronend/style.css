@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.my_container{
+    width: 100%;
+}
+
+.navContainer{
+    position: fixed;
+    top : 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 1rem 4rem 0rem 4rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+
+
+.byondcampuzLogo{
+    width: 10rem;
+}
+
+
+.nav-Item-Container{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-link{
+    text-decoration: none;
+    padding: 2rem;
+    color: black;
+} 
+ 
+.hideClass{
+    display: none;
+}
+
+.hero-section{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20rem ;
+    /* text-align: center; */
+}
+
+.byond-Img{
+    width: 84.2rem;
+    animation: slideRight 1s ease-in forwards;
+}
+
+.campuz-Img{
+    width: 75rem;
+    animation: slideLeft 1s ease-in  forwards;
+    position: relative;
+    top : -40px
+}
+
+.hero-text{
+    text-align: center;
+    color : #6d6767;
+    font-size: 2rem;
+    animation:  slideOut 1s linear 1;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+
+}
+
+.btn-container{
+    display: flex;
+    gap : 20px;
+    margin-top: 2rem;
+}
+
+.btn{
+    padding: 1.5rem 3rem;
+    border-radius: 30px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    animation:  slideOut 1s linear 1;
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+.btn::before,
+.btn::after{
+
+position: absolute;
+
+content: "";
+
+z-index: -1;
+
+}
+
+.btn:hover{
+    box-shadow: inset -10.5em 0 0 0 #83898d, inset 10.5em  0 0 0 #83898d;
+}
+
+.btn-events{
+    background-color: #bb1717;
+    color: #fff;
+}
+
+.btn-register{
+    background-color: #e0e0e0;
+}
+
+
+
+@keyframes slideRight {
+  from { transform: translateX(-50%) scale(1); }
+  to   { 
+    transform: translateX(0) scale(0.8);
+ }
+}
+
+
+@keyframes slideLeft {
+  from { transform: translateX(90%) scale(1); }
+  to   {
+     transform: translateX(8%) scale(0.8);
+     }
+}
+
+@keyframes slideOut {
+    from{
+        transform: translateY(100%);
+    }
+}
+
+
+@media (max-width : 680px){
+    .byond-Img{
+    text-align: center;
+    width: 64.2rem;
+    animation: slideRight 1s ease-in forwards;
+    }
+
+    .campuz-Img{
+    width: 55rem;
+    animation: slideLeft 1s ease-in  forwards;
+    position: relative;
+    top : -30px
+    }
+
+    .hero-text{
+    text-align: center;
+    color : #6d6767;
+    font-size: 1.5rem;
+    animation:  slideOut 1s linear 1;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+}
+
+@media (max-width : 450px){
+    .byond-Img{
+    text-align: center;
+    width: 44.2rem;
+    animation: slideRight 1s ease-in forwards;
+    }
+
+    .campuz-Img{
+    width: 35rem;
+    animation: slideLeft 1s ease-in  forwards;
+    position: relative;
+    top : -20px
+    }
+
+    .hero-text{
+    text-align: center;
+    color : #6d6767;
+    font-size: 1.5rem;
+    animation:  slideOut 1s linear 1;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    @keyframes slideRight {
+    from { transform: translateX(-50%) scale(1); }
+    to   { 
+    transform: translateX(10%) scale(0.8);
+ }
+}
+}
+
+@media (max-width: 605px){
+    .nav-link{
+        display: none;
+    }
+}
+
+
+@keyframes slideOut {
+    from {
+        transform: translateY(100%);
+    }
+    /* You are missing the 'to' state! */
+    to {
+        transform: translateY(0);
+    }
+}
