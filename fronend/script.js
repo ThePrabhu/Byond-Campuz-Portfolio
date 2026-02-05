@@ -1,6 +1,6 @@
 const campuzImg = document.querySelector(".campuz-image-container");
 const centerText = document.querySelector(".hero-text");
-const btnContainer = document.querySelectorAll(".btn");
+const btnContainer = document.querySelectorAll(".Mybtn");
 
 if (campuzImg) {
   setTimeout(() => {
