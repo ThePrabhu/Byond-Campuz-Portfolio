@@ -8,7 +8,9 @@
 
 body{
     overflow-x: hidden;
+    overflow-y: hidden;
 }
+
 html{
     font-size: 62.5%;
 }
@@ -59,7 +61,7 @@ html{
 }
 
 .hero-section{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     text-align: center;
 }
@@ -73,12 +75,12 @@ main{
 }
 
 .byond-Img{
-    width: 84.2rem;
+    width: 84.2%;
     animation: slideRight 1s ease-in forwards;
 }
 
 .campuz-Img{
-    width: 75rem;
+    width: 75%;
     animation: slideLeft 1s ease-in  forwards;
     position: relative;
     top : -40px
@@ -163,12 +165,12 @@ z-index: -1;
 @media (max-width : 680px){
     .byond-Img{
     text-align: center;
-    width: 64.2rem;
+    width: 64.2%;
     animation: slideRight 1s ease-in forwards;
     }
 
     .campuz-Img{
-    width: 55rem;
+    width: 55%;
     animation: slideLeft 1s ease-in  forwards;
     position: relative;
     top : -30px
@@ -186,12 +188,12 @@ z-index: -1;
 @media (max-width : 450px){
     .byond-Img{
     text-align: center;
-    width: 44.2rem;
+    width: 44.2%;
     animation: slideRight 1s ease-in forwards;
     }
 
     .campuz-Img{
-    width: 35rem;
+    width: 35%;
     animation: slideLeft 1s ease-in  forwards;
     position: relative;
     top : -20px
@@ -229,3 +231,4 @@ z-index: -1;
         transform: translateY(0);
     }
 }
+
