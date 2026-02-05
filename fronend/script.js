@@ -23,3 +23,23 @@ const btnWrapper = document.querySelector(".btn-container");
 setTimeout(() => {
     btnWrapper.classList.remove("hideClass");
 }, 2100);
+
+const section = document.querySelector('.showcase');
+const mainCard = document.querySelector('.main-card');
+
+window.addEventListener('scroll', () => {
+  const rect = section.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  // progress: 0 → 1 while section is in view
+  const progress = Math.min(
+    Math.max((windowHeight - rect.top) / windowHeight, 0),
+    1
+  );
+
+  // move DOWN only
+  const moveDown = progress * 160;
+
+  mainCard.style.transform = `translateY(${moveDown}px)`;
+});
+
