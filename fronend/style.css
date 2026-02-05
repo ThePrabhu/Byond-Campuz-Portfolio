@@ -6,6 +6,9 @@
     font-family: 'Inter', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
 html{
     font-size: 62.5%;
 }
