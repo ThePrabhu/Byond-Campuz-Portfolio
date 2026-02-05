@@ -32,6 +32,8 @@ html{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     z-index: 1000;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -62,11 +64,11 @@ html{
 
 .hero-section{
     width: 100%;
-    height: 100vh;
     text-align: center;
 }
 
 main{
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,12 +77,12 @@ main{
 }
 
 .byond-Img{
-    width: 84.2%;
+    width: 84.2rem;
     animation: slideRight 1s ease-in forwards;
 }
 
 .campuz-Img{
-    width: 75%;
+    width: 75rem;
     animation: slideLeft 1s ease-in  forwards;
     position: relative;
     top : -40px
@@ -170,12 +172,12 @@ z-index: -1;
 
     .byond-Img{
     text-align: center;
-    width: 64.2%;
+    width: 64.2rem;
     animation: slideRight 1s ease-in forwards;
     }
 
     .campuz-Img{
-    width: 55%;
+    width: 55rem;
     animation: slideLeft 1s ease-in  forwards;
     position: relative;
     top : -30px
@@ -197,12 +199,12 @@ z-index: -1;
 
     .byond-Img{
     text-align: center;
-    width: 44.2%;
+    width: 44.2rem;
     animation: slideRight 1s ease-in forwards;
     }
 
     .campuz-Img{
-    width: 35%;
+    width: 35rem;
     animation: slideLeft 1s ease-in  forwards;
     position: relative;
     top : -20px
